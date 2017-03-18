@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me Dominique Désilets - Avocate et médiatrice</title>
+<link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+    	<h1><a href="">Me Dominique Desilets<br><span style="font-size:65%">514-953-7929</span></a></h1>
+        <div id="navcontainer">
+            <ul id="navlist">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="mediation.html">Médiation</a></li>
+                <li><a href="droit.html">Droit</a></li>
+                <li><a href="domaines.html">Domaines</a></li>
+                <li id="active"><a href="contact.html">Contact</a></li>
+                <li><a href="commentaires.html">Commentaires</a></li>
+            </ul>
+        </div>
+        <br class="clearfloat" />
+    </header>
+    <section>
+        <div class="mainContent">
+            <h2>Contact</h2>
+            <p>
+            Téléphone: 514-953-7929 - N'hésitez pas à me laisser un message si je ne suis pas disponible. Je retourne rapidement tous mes appels.<br>
+            Fax: 1-888-907-7570 - Numéro sans frais<br>
+            Courriel: <a href="mailto:me@dominiquedesilets.ca">me@dominiquedesilets.ca</a>
+            </p>
+        </div>
+        <br class="clearfloat" />
+        <div>
+          <h2>Coodronnées</h2>
+          <table>
+            <tr>
+                <td style="width:49.5%; padding:0 15px;"><div id="map" style="width:350px;height:250px;"></div></td>
+                <td style="width:49.5%; padding:0 15px;">Ma place d'affaires est situ&eacute;e sur le Plateau Mont-Royal au:<br /><br />1394 av du Mont-Royal Est #106<br /><span>Montr&eacute;al QC&nbsp; H2J 1Y7</td>
+            </tr>
+          </table>
+        </div>
+        <br class="clearfloat" />
+        <div>
+            <h2>Vous pourez aussi me contacter en remplissant ce formulaire</h2>
+            <form action="https://formspree.io/david.raymond@azyva.ca" method="POST">
+                <p>
+                Nom<br>
+                <table width="75%"><tr>
+                    <td><input style="width:100%; padding:8px 8px; margin: 8px 0; box-sizing: border-box" type="text" name="prenom"/><br>Prénom</td>
+                    <td><input style="width:100%; padding:8px 8px; margin: 8px 0; box-sizing: border-box" type="text" name="nom"/><br>Nom</td>
+                </tr></table><br><br>
+                Votre adresse de courriel<br>
+                <input style="width:75%; padding:8px 8px; margin: 8px 0; box-sizing: border-box" type="email" name="_replyto"/><br><br>
+                Message<br>
+                <textarea style="width:75%; height:150px; padding:8px 8px; margin: 8px 0; box-sizing: border-box" rows="99" name="message"></textarea><br><br>
+                <input type="submit" value="Envoyer"/>
+                </p>
+            </form>
+        </div>
+<script>
+    function initMap() {
+        var uluru = {lat: 45.5307383, lng: -73.5765299};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOEqzpEHYpCG_yz_fob0k8yfOtUD14JfM&callback=initMap"></script>
+    </section>
+</div>
+</body>
+</html>
